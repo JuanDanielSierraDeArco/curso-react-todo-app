@@ -1,0 +1,21 @@
+.TodoBusqueda {
+    background: #F9FBFC;
+    border-radius: 0.125rem;
+    margin: 0 1.5rem;
+    height: 4rem;
+    width: calc(100% - 3.875rem);
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: 400;
+    color: #1E1E1E;
+    box-shadow: 0px 5px 50px rgba(32, 35, 41, 0.125);
+}
+
+.TodoBusqueda::placeholder{
+    color: #A5A5A5;
+    font-weight: 400;
+}
+
+.TodoBusqueda:focus {
+    outline-color: #61DAFA;
+}
