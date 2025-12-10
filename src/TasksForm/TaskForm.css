@@ -1,43 +1,54 @@
 form {
     width: 90%;
-    max-width: 18.75rem;
-    background-color: #fff;
+    min-width: 280px;
+    max-width: 25rem;
+    background: rgba( 20, 10, 30, 0.85);
     padding: 2.0625rem 2.5rem;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    border-radius: 14px;
+    box-shadow: 0 0 35px rgba( 164, 80, 139, 0.25);
+    backdrop-filter: blur(60px);
 }
 
 label {
     text-align: center;
     font-weight: bold;
     font-size: 1.25rem;
-    color: #1E1E1E;
+    color: #eaeaea;
     margin-bottom: 1.5rem;
 }
-
-textarea {
-    background-color: #f9fbfc;
-    border: 2px solid #202329;
-    border-radius: 2px;
-    box-shadow: 0px 5px 50px rgba(32, 35, 41, 0.25);
-    color: #1E1E1E;
+textarea{
+    background: rgba( 0, 0, 0, 0.35);
+    border: 2px solid #3a264f;
+    border-radius: 10px;
+    color: #eaeaea;
     font-size: 1.25rem;
-    text-align: center;
-    padding: .75rem;
+    text-align: left;
+    padding: 0.75rem;
     height: 6rem;
-    width: calc(100% - 1.5625rem);
+    width: 100%;
+    transition: 0.3s ease;
 }
 
 textarea::placeholder{
-    color: #A5A5A5;
+    color: #9873b9;
     font-weight: 400;
 }
 
 textarea:focus {
-    outline-color: #61dafa;
+    outline: none;
+    border-color: #a4508b;
+    box-shadow: 0 0 12px rgba( 164, 80, 139, 0.45);
+    background: rgba( 0, 0, 0, 0.45);
 }
+
+
+
+
+
 
 .taskForm-buttonContainer{
     margin-top: .875rem;
@@ -46,26 +57,34 @@ textarea:focus {
     align-items: center;
     width: 100%;
 }
-
 .tasksForm-button{
     cursor: pointer;
     display: inline-block;
-    font-size: 20px;
-    color: #202329;
-    font-weight: 400;
+    font-size: 1.2rem;
+    color: #fafafa;
+    font-weight: 500;
     width: 7.5rem;
-    height: 2.5rem;
-    border-radius: 2px;
+    height: 2.6rem;
+    border-radius: 10px;
     border: none;
+    transition: 0.25s ease;
+}
 
-}
 .tasksForm-button--add{
-    background: #61dafa;
-    box-shadow: 0px 5px 25px rgba(97, 218, 250, 0.5);
+    background: linear-gradient(135deg,#5f0a87,#a4508b);
+    box-shadow: 0px 4px 25px rgba(164, 80, 139, 0.5);
 }
+.tasksForm-button--add:hover{
+    transform: scale(1.06);
+    box-shadow: 0px 4px 25px rgba( 164, 80, 139, 0.7);
+}
+
 .tasksForm-button--cancel {
-    background: transparent;
+    background: rgba( 255, 255, 255, 0.008);
+    border: 1px solid rgba( 164, 80, 139, 0.25);
 }
 .tasksForm-button--cancel:hover {
-    background-color: red;
+    background: rgba( 164, 80, 139, 0.25);
+    border-color: #a4508b;
+    transform: scale(1.04);
 }

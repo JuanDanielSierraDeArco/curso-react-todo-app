@@ -7,15 +7,21 @@
     width: 3rem;
     font-size: 1.5rem;
     font-weight: bold;
+    transition: 0.3s ease;
 }
 
 .Icon-container-check {
     position: relative;
     left: .75rem;
 }
+.Icon-container-check:hover .Icon-svg {
+  fill: #c084fc;
+  transform: scale(1.25);
+}
 
-.Icon-container-check--active {
-    color: #4caf50;
+.Icon-container-check--active .Icon-svg {
+  fill: #a4508b;
+  transform: scale(1.15);
 }
 
 .Icon-container-delete {
@@ -24,17 +30,19 @@
   top: -24px;
   right: 0;
 }
-.Icon-container-delete:hover .Icon-svg{
-  fill: red;
-  transform: scale(1.25);
+
+.Icon-container-delete .Icon-svg {
+  fill: #a4508b;
+  transition: 0.3s ease;
 }
 
-.Icon-container-check:hover .Icon-svg{
-  fill: green;
+.Icon-container-delete:hover .Icon-svg {
+  fill: #ff7abf;
   transform: scale(1.25);
 }
 
 .Icon-svg {
     width: 1.5rem;
     height: 1.5rem;
+    transition: 0.3s ease;
 }

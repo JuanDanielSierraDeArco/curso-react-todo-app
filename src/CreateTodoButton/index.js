@@ -1,10 +1,14 @@
-import './CreateTodoButton.css';
+import "./CreateTodoButton.css";
 
-const CreateTodoButton = ({setOpenModal}) => (
-    <button className="CreateTodoButton"
-    onClick={() => {
-        setOpenModal(state => !state)
-    }}>+</button>
-)
+const CreateTodoButton = ({ setOpenModal }) => (
+  <div className="container">
+    <button
+      className="CreateTodoButton"
+      onClick={() => {
+        setOpenModal((state) => !state);
+      }}
+    >+</button>
+  </div>
+);
 
 export { CreateTodoButton };

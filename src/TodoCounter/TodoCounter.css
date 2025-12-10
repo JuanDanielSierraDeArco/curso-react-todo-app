@@ -1,11 +1,21 @@
 .TodoCounter {
-    font-size: '1.5rem';
+    font-size: 1.5rem;
     text-align: center;
     margin: 0;
     padding: 3rem;
     font-weight: normal;
+    transform: none;
 }
+
 .TodoCounter span {
     font-weight: bold;
 }
 
+h1 {
+    color: #eaeaea;
+}
+
+.TodoCounter:hover {
+    color: #ebd4d4;
+    transform: translateY(-5px); 
+}
