@@ -61,13 +61,3 @@ const TodoProvider = ({ children }) => {
 }
 
 export { TodoContext, TodoProvider };
-
-      /* // loading={loading}
-      // error={error}
-      // completedTodos = { completedTodos }
-      // totalTareas = { totalTareas }
-      // searchValue = { searchValue }
-      // setSearchValue = { setSearchValue }
-      // searchedTodos = { searchedTodos }
-      // completeTodo = { completeTodo }
-      // deleteTodo = { deleteTodo } */
