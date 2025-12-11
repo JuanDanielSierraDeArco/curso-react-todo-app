@@ -19,10 +19,10 @@
   transform: scale(1.25);
 }
 
-.Icon-container-check--active .Icon-svg {
+/* .Icon-container-check--active .Icon-svg {
   fill: #a4508b;
   transform: scale(1.15);
-}
+} */
 
 .Icon-container-delete {
   position: absolute;
@@ -37,7 +37,7 @@
 }
 
 .Icon-container-delete:hover .Icon-svg {
-  fill: #ff7abf;
+  fill: #df4494;
   transform: scale(1.25);
 }
 

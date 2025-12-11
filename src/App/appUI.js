@@ -50,7 +50,7 @@ const AppUI = () => {
             />
           ))}
         </TodoList>
-        <CreateTodoButton setOpenModal={setOpenModal} />
+        { (!loading && !error) && <CreateTodoButton setOpenModal={setOpenModal}/>}
         {openmodal && (
           <Modal>
             <TasksForm />
