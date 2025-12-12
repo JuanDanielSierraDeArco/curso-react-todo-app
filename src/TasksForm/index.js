@@ -1,9 +1,7 @@
 import React from "react";
 import './TaskForm.css'
-import { TodoContext } from "../TodoContext";
 
-const TasksForm = () => {
-    const {setOpenModal, addTask} = React.useContext(TodoContext);
+const TasksForm = ({setOpenModal, addTask}) => {
     const [newTaskValue, setNewTaskValue] = React.useState('');
 
 
