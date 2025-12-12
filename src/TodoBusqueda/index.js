@@ -1,9 +1,8 @@
 import React from "react"
 import "./TodoBusqueda.css"
-import { TodoContext } from "../TodoContext"
 
-function TodoBusqueda() {
-  const {searchValue, setSearchValue} = React.useContext(TodoContext)
+
+function TodoBusqueda({searchValue, setSearchValue}) {
 
   return(
     <input placeholder="Buscar" 
